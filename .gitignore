@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Local tooling
+.claude/settings.local.json
+
+# Data
+# Keep the committed raw snapshot (volunteer = source of truth).
+# Ignore the large official crosscheck (fetched on demand) and regenerable tiers.
+data/raw/official_data_en.csv
+data/interim/*
+data/processed/*
+!data/interim/.gitkeep
+!data/processed/.gitkeep
